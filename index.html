@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Distance Calculate</title>
+</head>
+<body>
+    <form>
+        <table>
+            <caption>
+                <h1>Link Distance Calculate</h1>
+            </caption>
+            <tr>
+                <td>Enter The Co-ordinates of A:</td>
+                <td>
+                    <input
+                    type = "text" name = "lat1","long1" id = "lat1","long1" placeholder="Latitude A" />degree
+                </td>
+                <td>
+                    <input
+                      type = "text name" name = "long1" id = "long1" placeholder="longitude A" />degree
+                </td>
+            </tr>
+            <tr>
+                <td>Enter The Co-ordinates of B:</td>
+                <td>
+                    <input type = "text" name = "lat2" placeholder="latitude B" />degree
+                </td>
+                <td>
+                    <input type = "text" name = "long2" id = "long2" placeholder="longitude B"/>degree
+                </td> 
+                </tr>
+                <tr>
+                    <td>Frequency:</td>
+                    <td><select name ="frequency" iud ="channel frequency" onChange="calculate()">
+                        <option value = "hidden"></option>
+                        <option value = "2.4">2.4</option>
+                        <option value = "5.1">5.1</option>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Link Distance:</td>
+                    <td><input type="text" id="linkDistance" onchange="fresnelzone()"></td>
+                </tr>
+                <tr>
+                    <td>Fresnel Radius(in m):</td>
+                    <td><input type="text" id="fresnel Radius"/></td>
+                </tr>
+        </table>
+    </form>
+    <script src = "fresnelradius.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+           
+         
